@@ -1,9 +1,12 @@
 # OS X
 .DS_Store
+.obsidian
+
+
+# Windows
+desktop.ini
 
 # Xcode
-/*.xcodeproj
-/*.xcworkspace
 build/
 *.pbxuser
 xcuserdata/
@@ -21,6 +24,8 @@ DerivedData
 # Tuist
 graph.png
 Tuist/Dependencies/graph.json
+/*.xcodeproj
+/Derived
 
 # Logs
 Build-Phases/temp/
@@ -28,5 +33,10 @@ Build-Phases/temp/
 # SPM
 **/.build
 .swiftpm/
+.package.resolved
+Package.resolved
 
 *__Snapshots__*
+
+
+.vscode/settings.json
