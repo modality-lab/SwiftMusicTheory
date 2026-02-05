@@ -39,10 +39,8 @@ public struct StringInstrument: MusicalInstrument {
 }
 
 fileprivate extension Tone {
-  static var stubTone = Tone(pitch: Note.c.octave(.smallest), frequency: 1)
+  static let stubTone = Tone(pitch: Note.c.octave(.smallest), frequency: 1)
 }
-
-extension StringInstrument.String: Sendable { }
 
 public extension StringInstrument.Tuning {
   static var standart6String: StringInstrument.Tuning {
