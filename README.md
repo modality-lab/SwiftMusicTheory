@@ -162,10 +162,10 @@ Feel free to explore them for better understanding of the main concepts in the m
 
 
 # **Usage**
-We use the library in a bunch of our internal apps, that are currently on its way to the AppStore. Stay tuned for more!
-- Spiral of Fifths - a better representation of Circle of Fifths concept made for interactive navigationing throu modes of basic scales, such as Diatonic, Harmonic major, Pentatonic, Whole tone, Diminished and more.  Follow our telegram for more
+We use the library in a bunch of our internal apps, that are currently on their way to the App Store. Stay tuned for more!
+- Spiral of Fifths - a better representation of Circle of Fifths concept made for interactive navigating through modes of basic scales, such as Diatonic, Harmonic major, Pentatonic, Whole tone, Diminished and more.  Follow our telegram for more
    ![](./Docs/SoF_diatonic.png)![](./Docs/SoF_harmonic_Major.png)
-- Guitar Practic - engaging, effective, and accessible platform for music enthusiasts of all levels to improve technical and theoretical skills build for iOS, macOS and visionOS.
+- Guitar Practic - engaging, effective, and accessible platform for music enthusiasts of all levels to improve technical and theoretical skills built for iOS, macOS and visionOS.
 - Bunch of utilities, such as Metronome, Tuner, Chord detectors and so on
 
 # **Acknowledgements**

@@ -1,4 +1,3 @@
-// TODO: Rename FrettedStringInstrument
 public struct StringInstrument: MusicalInstrument {
 
   public typealias Fret = Int
@@ -12,7 +11,7 @@ public struct StringInstrument: MusicalInstrument {
   public let tuning: Tuning
   
   public init(
-    tuning: Tuning = .standart6String,
+    tuning: Tuning = .standard6String,
     temperament: EqualTemperament = EqualTemperament._12ET440,
     fretsCount: Int = 24
   ) {
@@ -43,7 +42,7 @@ fileprivate extension Tone {
 }
 
 public extension StringInstrument.Tuning {
-  static var standart6String: StringInstrument.Tuning {
+  static var standard6String: StringInstrument.Tuning {
     [
       Note.e.octave(.oneLine),
       Note.b.octave(.small),
@@ -54,7 +53,7 @@ public extension StringInstrument.Tuning {
     ]
   }
   
-  static var standart7String: StringInstrument.Tuning {
+  static var standard7String: StringInstrument.Tuning {
     [
       Note.e.octave(.oneLine),
       Note.b.octave(.small),
@@ -66,7 +65,7 @@ public extension StringInstrument.Tuning {
     ]
   }
   
-  static var standart8String: StringInstrument.Tuning {
+  static var standard8String: StringInstrument.Tuning {
     [
       Note.e.octave(.oneLine),
       Note.b.octave(.small),
@@ -80,13 +79,13 @@ public extension StringInstrument.Tuning {
   }
   
   static var dropE8String: StringInstrument.Tuning {
-    var dropD = standart8String
+    var dropD = standard8String
     dropD[7] = Note.e.octave(.contra)
     return dropD
   }
 
   static var dropD: StringInstrument.Tuning {
-    var dropD = standart6String
+    var dropD = standard6String
     dropD[5] = Note.d.octave(.great)
     return dropD
   }

@@ -45,11 +45,6 @@ extension Pitch: CustomDebugStringConvertible {
     String(note.notation) + String(octave.rawValue)
   }
 
-  // TODO: Implement me
-  // I think create TemperedPitch is a good idea
-//  public func transposed(by interval: Interval) -> Pitch {
-//
-//  }
 }
 
 public extension Note {

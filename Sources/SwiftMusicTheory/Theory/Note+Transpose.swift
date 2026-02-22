@@ -4,7 +4,6 @@ extension Note {
     note.semitonesNormalized == self.semitonesNormalized
   }
   
-  // TODO: What is semitones in note? Does not make sense. Make a static function on Interval instead.
   public var semitonesNormalized: Int {
     (diatonicInterval.semitonesCount() + Interval.octave().semitonesCount()) % Interval.octave().semitonesCount()
   }
