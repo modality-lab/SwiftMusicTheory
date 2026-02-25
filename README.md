@@ -1,8 +1,30 @@
 # SwiftMusicTheory
 
-Open source Swift representation of music theory made to be as accurate as possible. This library aims to make working with music theory easier and more intuitive. 
+![Version](https://img.shields.io/github/v/release/modality-lab/SwiftMusicTheory)
+![Swift](https://img.shields.io/badge/Swift-5.6+-orange?logo=swift)
+![Platforms](https://img.shields.io/badge/Platforms-iOS%20%7C%20macOS%20%7C%20visionOS-blue)
+![SPM](https://img.shields.io/badge/SPM-compatible-brightgreen)
+![License](https://img.shields.io/github/license/modality-lab/SwiftMusicTheory)
+
+Open source Swift representation of music theory made to be as accurate as possible. This library aims to make working with music theory easier and more intuitive.
+
+# **Installation**
+
+Add SwiftMusicTheory to your project via Swift Package Manager. In your `Package.swift`:
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/modality-lab/SwiftMusicTheory.git", from: "1.0.0")
+]
+```
+
+Or in Xcode: **File → Add Package Dependencies** and enter:
+```
+https://github.com/modality-lab/SwiftMusicTheory.git
+```
+
 # **Features**
-This library provides an easy-to-use interfaces for developers to integrate music theory into their Swift applications. These features provide a robust foundation for working with music theory concepts in Swift, enabling both beginners and experts to explore and utilize music theory programmatically.
+This library provides an easy-to-use interfaces for developers to integrate music theory into their Swift applications. These features provide a robust foundation for working with music theory concepts in Swift.
 
 ## **Notes**: 
 - Define and manipulate musical notes with ease.
@@ -20,7 +42,7 @@ let d = c + .second(.major)
 let e: Note = .f.flat().diatonicEnharmonism(shifted: -1)
 ```
 
-- Combine with Octave and cents shift to get Pitch (MIDI support coming soon):
+- Combine with Octave and cents shift to get Pitch:
 ```swift
 public extension Note {
   func octave(_ octave: Octave) -> Pitch {
@@ -69,7 +91,7 @@ public enum Interval: Sendable {
 #expect(.fifth(.augmented()).inverted == .fourth(.diminished()))
 ```
 
-## **Scales and Modes**:
+## **Scales and Modes**
 - Support for various predefined scales:
 	- Natural major (Diatonic)
 	- Harmonic major
@@ -156,18 +178,17 @@ A lot of tests can be found at Tests/ folder written on new [Swift Testing](http
 Feel free to explore them for better understanding of the main concepts in the music theory
 
 # **Roadmap**
+- [x] MIDI support
 - [ ] Chords inversions detection
-- [ ] MIDI support
 - [ ] Microtonal systems support
 
 
 # **Usage**
 We use the library in a bunch of our internal apps, that are currently on their way to the App Store. Stay tuned for more!
-- Spiral of Fifths - a better representation of Circle of Fifths concept made for interactive navigating through modes of basic scales, such as Diatonic, Harmonic major, Pentatonic, Whole tone, Diminished and more.  Follow our telegram for more
-   ![](./Docs/SoF_diatonic.png)![](./Docs/SoF_harmonic_Major.png)
+- [Spiral of Fifths](https://github.com/modality-lab/TheoryDiagrams) - a better representation of Circle of Fifths concept made for interactive navigating through modes of basic scales, such as Diatonic, Harmonic major, Pentatonic, Whole tone, Diminished and more.
 - Guitar Practic - engaging, effective, and accessible platform for music enthusiasts of all levels to improve technical and theoretical skills built for iOS, macOS and visionOS.
 - Bunch of utilities, such as Metronome, Tuner, Chord detectors and so on
 
 # **Acknowledgements**
 Feel free to let us know if there’s anything specific you’d like to add or modify! And feel free to contribute, I'll be glad to see your Pull Requests :)
-For any questions or suggestions, please contact us at waves.tech.labs@gmail.com
+For any questions or suggestions, please contact me in Telegram: @kramo7a 
